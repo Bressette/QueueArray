@@ -10,3 +10,27 @@ bool isEmpty(int *front, int *rear)
     else
         return false;
 }
+
+void enQueue(int *array, int *front, int *rear, int newElement, int *size, int *curSize)
+{
+    if(front == (rear+1) % size)
+    {
+        printf("Your queue is full\n");
+    }
+
+    else if(isEmpty())
+    {
+        (*front)++;
+        (*rear)++;
+        array[*rear] = newElement;
+        (*curSize)++;
+    }
+
+    else
+    {
+        *rear = (*rear +1) % *size;
+        arr[*rear] = newElement;
+        (*curSize)++;
+    }
+
+}

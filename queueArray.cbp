@@ -37,6 +37,7 @@
 		<Unit filename="utilityFunctions.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="utilityFunctions.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

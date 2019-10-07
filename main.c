@@ -11,7 +11,7 @@ int main()
     *rear = -1;
     int array[1000];
 
-    isEmpty(front, rear);
+
     return 0;
 }
 
