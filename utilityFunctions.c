@@ -34,3 +34,23 @@ void enQueue(int *array, int *front, int *rear, int newElement, int *size, int *
     }
 
 }
+
+void deQueue(int *array, int *front, int *rear, int *size, int *curSize)
+{
+    if(isEmpty())
+    {
+        printf("Your queue is empty\n");
+    }
+
+    else if((*front) == (*rear))
+    {
+        (*front)--;
+        (*rear)--;
+        (*curSize)--;
+    }
+    else
+    {
+        front = (front + 1) % size;
+        (*curSize)--;
+    }
+}
